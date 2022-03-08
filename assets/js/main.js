@@ -1,10 +1,19 @@
 /*=============== LOADER ===============*/
 
+onload = () => {
+  const load = document.getElementById("load");
+
+  setTimeout(() => {
+    load.style.display = "none";
+  }, 2500);
+};
+
+/*===== MENU SHOW =====*/
+
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-/*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
